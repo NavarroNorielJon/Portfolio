@@ -19,16 +19,26 @@
             <form method="post" action="">
                 <div class="form-group">
                     <label for="usernameOrEmail">Username</label>
-                    <input id="usernameOrEmail" class="form-control" type="text" name="usernameOrEmail" placeholder="Username or E-mail address">
+                    <input id="usernameOrEmail" 
+                    class="form-control" 
+                    type="text" 
+                    name="usernameOrEmail" 
+                    placeholder="Username or E-mail address">
                 </div>
 
                 <div class="form-group">
                         <label for="password">Password</label>
-                        <input id="password" class="form-control" type="password" name="password" placeholder="Password">
+                        <input id="password" 
+                        class="form-control" 
+                        type="password"
+                        name="password" 
+                        placeholder="Password">
                         <a href="#">Forgot Password?</a>
                 </div>
 
-                <p class="text-center">Not yet registered? <a data-toggle="modal" data-target="#register" href="#">Sign up</a></p>
+                <p class="text-center">Not yet registered? 
+                    <a data-toggle="modal" data-target="#register" href="#">Sign up</a>
+                </p>
                 <button type="submit" class="btn btn-primary float-right">Login</button>
             </form>
         </div>
@@ -39,25 +49,44 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <h2 class="display-5 text-center">Registeration Form</h1>
-                    <form class="p-4" method="post" action="">
+                    <form class="p-4" method="post" action="php/register.php">
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input id="email" class="form-control" type="email" name="email" placeholder="Username or E-mail address">
+                            <input id="email" class="form-control" 
+                            type="email" 
+                            name="email"
+                            placeholder="Username or E-mail address" 
+                            required="required">
                         </div>
                 
                         <div class="form-group">
                             <label for="username">Username</label>
-                            <input id="username" class="form-control" type="text" name="username" placeholder="Password">
+                            <input id="username" 
+                            class="form-control" 
+                            type="text"
+                            name="username" 
+                            placeholder="Password" 
+                            required="required">
                         </div>
                         
                         <div class="form-group">
-                                <label for="register-password">Password</label>
-                                <input id="register-password" class="form-control" type="text" name="register-password" placeholder="Password">
+                            <label for="register-password">Password</label>
+                            <input id="register-password"
+                            class="form-control" 
+                            type="password" 
+                            name="register-password" 
+                            placeholder="Password" 
+                            required="required">
                         </div>
                         
                         <div class="form-group">
-                                <label for="verifyPassword">Verify Password</label>
-                                <input id="verifyPassword" class="form-control" type="text" name="verifyPassword" placeholder="Verify Password">
+                                <label for="verify-password">Verify Password</label>
+                                <input id="verify-password" 
+                                class="form-control" 
+                                type="password" 
+                                name="verify-password" 
+                                placeholder="Verify Password" 
+                                required="required">
                         </div>
 
                         <button type="submit" class="btn btn-primary float-right">Register</button>
