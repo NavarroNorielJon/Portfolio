@@ -1,0 +1,19 @@
+.index{
+    background-image: url(../img/index-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login-form {
+    width: 30vw;
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-radius: 2%;
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 10pt;
+}
